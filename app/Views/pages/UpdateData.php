@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>This is Home</h1>
+            <h1>Update Data</h1>
             <?php foreach ($alamat as $row) : ?>
                 <ul>
                     <li>Tipe : <?= $row['tipe']; ?></li>    

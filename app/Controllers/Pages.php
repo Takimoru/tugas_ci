@@ -13,32 +13,19 @@ class Pages extends BaseController
         return view('pages/Home',$data);
     }
 
-    public function about() 
+    public function InsertData() 
     {
         $data =[
-            'title' => 'About'  
+            'title' => 'Insert Data'  
         ];
-        return view('Pages/about',$data);
+        return view('Pages/InsertData',$data);
+
+        dd($this->request->getVar());
     }
 
-    public function contact() 
+    public function UpdateData() 
     {
-        $data =[
-            'title' => 'Contact',
-            'alamat' => [
-                [
-                    'tipe' => 'Rumah',
-                    'alamat' => 'Jl. Raya Cibinong 1',
-                    'kota' => 'Cibinong'
-                ],
-                [
-                    'tipe' => 'Kantor',
-                    'alamat' => 'Jl. Raya Cibinong 2',
-                    'kota' => 'Cibinong'
-                ]
-            ]  
-        ];
-        return view('Pages/contact',$data);
+        return view('Pages/UpdateData',$data);
     }
 
 }
